@@ -52,6 +52,9 @@ public class MyMessageListener : MonoBehaviour
             case "DOWN":
                 transform.Translate(Vector3.down * movement);
                 break;
+            default:
+                Debug.Log(joystickDir);
+                break;
         }
     }
 
