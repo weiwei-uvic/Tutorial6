@@ -38,7 +38,9 @@ public class MyMessageListener : MonoBehaviour
     //////////////////////////////////////////////////
     void MoveObject(string joystickDir)
     {
-        switch(joystickDir)
+
+        joystickDir = joystickDir.Trim();
+        switch (joystickDir)
         {
             case "LEFT":
                 transform.Translate(Vector3.left* movement);

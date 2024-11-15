@@ -21,7 +21,7 @@ public class MessageRW : MonoBehaviour
         Vector3 objecPosition = transform.position;
         // check which region is the game object
         // Check if the position is between (0,0) and (10,10)
-        if (objecPosition.x >= 0 && objecPosition.x <= 10 && objecPosition.y >= 0 && objecPosition.y <= 10 &&!isRegion1)
+        if (objecPosition.x > 0 && objecPosition.x < 10 && objecPosition.y > 0 && objecPosition.y < 10 &&!isRegion1)
         {
             Debug.Log("The GameObject is in region 1");
             isRegion1 = true;
@@ -30,7 +30,7 @@ public class MessageRW : MonoBehaviour
             isRegion4 = false;
             serialController.SendSerialMessage("1");
         }
-        else if (objecPosition.x >= 0 && objecPosition.x <= 10 && objecPosition.y <  0 && objecPosition.y > -10 && !isRegion2)
+        else if (objecPosition.x > 0 && objecPosition.x < 10 && objecPosition.y <  0 && objecPosition.y > -10 && !isRegion2)
         {
             Debug.Log("The GameObject is in region 2");
             isRegion2 = true;
