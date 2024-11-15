@@ -11,8 +11,8 @@ Arduino:
     - We will write Unity code to listen to this Serial output and play sounds accordingly
 
 Unity:
-    - In the Unity Hub, click "New project", then select the "Universal 2D" template, and click "Create project"
-        - This may take a few minutes
+    - In the Unity Hub, click "New project", then select the "Universal 2D" template (look under "All Templates"), and click "Create project"
+        - This may take a few minutes (~4.5 minutes)
     - In the top bar, click Edit -> Project Settings then search "Api compatibility level" in the top bar
         - Under the "Player" tab, under "Other settings", scroll down a bit to find "API Compatibility Level"
         - By default, this is ".NET Standard 2.1"
